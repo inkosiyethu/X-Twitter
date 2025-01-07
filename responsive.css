@@ -1,0 +1,54 @@
+/* mobile.css */
+
+@media (max-width: 768px) {
+    /* Mobile Optimizations */
+
+    .left-sidebar, .right-sidebar {
+        display: none;
+    }
+
+    .middle {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+  
+    .bottom-bar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #1DA1F2;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px 0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .menu-item:hover {
+        background-color: #333;
+        transform: scale(1.1);
+    }
+
+    .menu-item.active {
+        background-color: #096ba8;
+        transform: scale(1.2);
+    }
+
+    .menu-item .material-icons {
+        color: white;
+        font-size: 24px;
+    }
+

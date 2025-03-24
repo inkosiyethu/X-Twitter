@@ -1,330 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X clone - Nkosiyethu</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css"> 
-    <link rel="icon" href="./assets/X_logo_2023.svg.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/X_logo.jpg" type="image/x-icon" />
 
-    
-</head>
-<body>
+    <title>x.com/home</title>
+  </head>
+  <body>
     <div class="container">
-        <div class="left-sidebar">
-            <div class="logo">
-                <img src="./assets/download.png" alt="Logo">
-            </div>
-            <div class="menu">
-                <div class="menu-item" id="home-button">
-                    <span class="material-icons">home</span> <strong>Home</strong>
-                </div>
-                <div class="menu-item" id="explore-button">
-                    <span class="material-icons">search</span> Explore
-                </div>
-                <div class="menu-item" id="notifications-button">
-                    <span class="material-icons">notifications</span> Notifications
-                </div>
-                <div class="menu-item" id="Messages-button">
-                    <span class="material-icons">mail</span> Messages
-                </div>
-                <div class="menu-item" id="Grok-button">
-                    <span class="material-icons">crop_din</span> Grok
-                </div>
-                <div class="menu-item" id="Communities-button">
-                    <span class="material-icons">group</span> Communities
-                </div>
-                <div class="menu-item" id="Premium-button">
-                    <img src="./assets/download.png" alt="Premium Icon" class="menu-icon"> <span class="menu-text">Premium</span>
-                </div>
-                <div class="menu-item" id="Verified-Orgs-button">
-                    <span class="material-icons">bolt</span> Verified Orgs
-                </div>
-                <div class="menu-item" id="Profile-button">
-                    <span class="material-icons">person</span> Profile
-                </div>
-                <div class="menu-item" id="Profile-button">
-                    <span class="material-icons">more_horiz</span> More
-                </div>
-            </div>
-            <div class="post-button">
-                <h4>Post</h4>
-                
-            </div>
-            <div class="profile-info">
-                <div class="profile-img" style="background-image: url('./assets/profile-pic.jpg'); background-size: cover; background-position: center; width: 40px; height: 40px; border-radius: 50%;"></div>
-                <div class="naming">
-                    <span class="user-name">Nkosiyethu</span> <br>
-                    <span class="user-name" id="username-id">@Nkosiyethu</span> 
-                </div>
-                <span class="material-icons" id="profile-more-username">more_horiz</span>
-            </div>
+      <div class="left-sidebar">
+        <div>
+          <div class="logo">
+            <i class="bi bi-twitter-x" style="font-size: 2rem"></i>
+          </div>
 
+          <div>
+            <nav class="navigation">
+              <a href="#"> <i class="bi bi-house-door-fill"></i> Home </a>
+              <a href="#"> <i class="bi bi-compass"></i> Explore </a>
+              <a href="#"> <i class="bi bi-bell"></i> Notifications </a>
+              <a href="#"> <i class="bi bi-envelope"></i> Messages </a>
+              <a href="#"> <i class="bi bi-lightning"></i> Grok </a>
+              <a href="#"> <i class="bi bi-card-list"></i> Lists </a>
+              <a href="#"> <i class="bi bi-bookmark"></i> Bookmarks </a>
+              <a href="#"> <i class="bi bi-people"></i> Communities </a>
+              <a href="#"> <i class="bi bi-person"></i> Profile </a>
+              <a href="#"> <i class="bi bi-three-dots"></i> More </a>
+            </nav>
+          </div>
+          <a href="#" class="rounded-button">Post</a>
         </div>
 
-        <div class="middle">
-            <div class="top-bar">
-                <span class="tab" id="for-you">For You</span>
-                <span class="tab" id="following">Following</span>
+        <div>
+          <a href="#" class="personal-profile">
+            <img src="./assets/profile-pic.jpg" alt="user picture" />
+            <div>
+              <p>Nkosiyethu</p>
+              <p>Nkosiyethu</p>
             </div>
-            <div class="post-form">
-                <textarea placeholder="What's happening?" rows="3"></textarea>
-                <div class="icons">
-                    <span class="material-icons" id="profile-more">image</span>
-                    <span class="material-icons" id="profile-more">gif_box</span>
-                    <span class="material-icons" id="profile-more">ballot</span>
-                    <span class="material-icons" id="profile-more">sentiment_satisfied</span>
-                    <span class="material-icons" id="profile-more">calendar_month</span>
-                    <span class="material-icons" id="profile-more">location_on</span>
-                </div>
-                <button class="post-button-top">Post</button>
-            </div>
-            <div class="show-posts">
-                <a href="#">Show 140 Posts</a>
-            </div>
-            <div class="feed">
-               <!-- Post 1 -->
-                <div class="post">
-                    <span>
-                    <img src="./assets/elonmusk.jpg" alt="Profile">
-                        <span class="post-acc" >Elon Musk</span>
-                        <span class="post-acc-handle">@elonmusk • Nov 17</span>
-                    </span>
-                    <div class="content">
-                        <p>To Mars and back!🚀<a href="#" id="dogecoin-hashtag">#DogeCoin</a>🐕🪙 </p> 
-                        <img src="./assets/elon-musk-post1.jpeg" alt="Post Image">
-                    </div>
-                    <div class="post-actions">
-                            <span class="comments">
-                                <span class="material-icons">chat_bubble</span> 
-                                <h6>33k</h6>
-                            </span>
-                            <span class="repost">
-                                <span class="material-icons">repeat</span>
-                                <h6>437k</h6>
-                            </span>
-                            <span class="likes">  
-                                <span class="material-icons">favorite</span>
-                                <h6>873k </h6>
-                            </span>  
-                            <span class="poll">    
-                                <span class="material-icons">leaderboard</span>
-                                <h6>3M</h6>
-                            </span>
-                            <span class="last-icons">   
-                                <span class="material-icons">bookmark</span>
-                                <span class="material-icons">upload</span>
-                            </span>     
-                    </div>
-                </div>
-                <hr>
-                <!-- Post3 -->
-                <div class="post">
-                    <span>
-                    <img src="./assets/profile-pic.jpg" alt="Profile">
-                        <span class="post-acc" >Nkosiyethu</span>
-                        <span class="post-acc-handle">@Nkosiyethu • Nov 17</span>
-                    </span>
-                    <div class="content">
-                        <p> Welcome to my fictional Twitter account! This page is for learning purposes, and the account will share exciting content related to tech, finance, and science. Dive into the latest insights, trends, and tips to stay updated on all things geeky. For any inquiries or to get in touch, feel free to reach out via <a href="mailto:thabon803@gmail.com" id="email">email</a> 🚀💻💸 <a href="#" id="zaio-tag">#ZaioOctBC2024</a></a></p> 
-                    </div>
-                    <div class="post-actions">
-                            <span class="comments">
-                                <span class="material-icons">chat_bubble</span> 
-                                <h6>4</h6>
-                            </span>
-                            <span class="repost">
-                                <span class="material-icons">repeat</span>
-                                <h6>11</h6>
-                            </span>
-                            <span class="likes">  
-                                <span class="material-icons">favorite</span>
-                                <h6>87</h6>
-                            </span>  
-                            <span class="poll">    
-                                <span class="material-icons">leaderboard</span>
-                                <h6>206</h6>
-                            </span>
-                            <span class="last-icons">   
-                                <span class="material-icons">bookmark</span>
-                                <span class="material-icons">upload</span>
-                            </span>     
-                    </div>
-                </div>
-                <hr>
-                <!-- Post3 -->
-                <div class="post">
-                     <span>
-                     <img src="./assets/koshiek.jpg" alt="Profile">
-                         <span class="post-acc" >Koshiek Karan</span>
-                         <span class="post-acc-handle">@iamkoshiek • Nov 17</span>
-                     </span>
-                     <div class="content">
-                         <p>Bitcoin’s been on the up for ages now… Even my grandma’s asking for investment tips at this point! 🙆‍♂💰</p>
-                         <img src="./assets/koshiek3333.jpeg" alt="Post Image">
-                     </div>
-                     <div class="post-actions">
-                         <span class="comments">
-                             <span class="material-icons">chat_bubble</span>
-                             <h6>904</h6>
-                         </span>
-                         <span class="repost">
-                             <span class="material-icons">repeat</span>
-                             <h6>3k</h6>
-                         </span>
-                         <span class="likes">  
-                             <span class="material-icons">favorite</span>
-                             <h6>11k </h6>
-                         </span>  
-                         <span class="poll">    
-                             <span class="material-icons">leaderboard</span>
-                             <h6>800k</h6>
-                         </span>
-                         <span class="last-icons">   
-                             <span class="material-icons" id="bookmark">bookmark</span>
-                             <span class="material-icons" id="share">upload</span>
-                         </span>     
-                </div>
-                </div>
-            </div>
+            <i class="bi bi-three-dots"></i>
+          </a>
         </div>
+      </div>
+
+      <div class="center-content">
+        <div class="top-options">
+          <div class="top-option-btn">
+            <p>For you</p>
+          </div>
+          <div class="top-option-btn">
+            <p>Following</p>
+          </div>
+        </div>
+        <div class="tweet-box">
+          <div class="user-pic">
+            <img src="./assets/profile-pic.jpg" alt="user profile pic" />
+          </div>
+          <div class="tweet-inner-box">
+            <div class="message-box">
+              <form action="">
+                <input type="text" placeholder="What is happening?!" />
+              </form>
+            </div>
+            <div class="message-options">
+              <div class="message-icons">
+                <a href="#"> <i class="bi bi-image"></i></a>
+                <a href="#"> <i class="bi bi-filetype-gif"></i></a>
+                <a href="#"> <i class="bi bi-list-ul"></i></a>
+                <a href="#"> <i class="bi bi-emoji-smile"></i></a>
+                <a href="#"> <i class="bi bi-calendar-event"></i></a>
+                <a href="#"> <i class="bi bi-geo-alt"></i></a>
+              </div>
+              <div class="post-button-top">Post</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="individual-tweets">
+          <div class="user-profile">
+            <img
+              src="./assets/koshiek.jpg"
+              alt="user profile pic"
+            />
+          </div>
+          <div class="tweet-content">
+            <div class="username">
+              <p class="display-name">Koshiek Karan</p>
+              <p class="at-username">@iamkoshiek</p>
+              <p class="time-posted">· 12h</p>
+            </div>
+
+            <div class="user-tweet-text">
+              <p>Bitcoin’s been on the up for ages now… Even my grandma’s asking for investment tips at this point! 🙆‍♂💰</p>
+            </div>
+
+            <div class="user-tweet-media">
+              <img
+                src="./assets/koshiek3333.jpeg"
+                alt="tweet media"
+              />
+            </div>
         
-        <div class="right-sidebar">
-            <div class="search-box">
-                <span class="material-icons" id="search-icon">search</span>
-                <input type="text" placeholder="Search">
+            <div class="user-tweet-icons">
+              <i class="bi bi-chat" data-text="322"></i>
+              <i class="bi bi-repeat" data-text="287"></i>
+              <i class="bi bi-heart" data-text="27.1K"></i>
+              <i class="bi bi-bar-chart" data-text="511K"></i>
+               <div class="last-last">
+               <span> <i class="bi bi-bookmark"></i></span>
+               <span> <i class="bi bi-upload"></i></span>
+              </div>
+                  
             </div>
-            <div class="subscribe">
-                <h1>Subscribe to Premium</h1>
-                <p>Subscribe to unlock new features and if </p>
-                <p>eligible, receive a share of revenue.</p>
-                <button>Subscribe</button>
-            </div>
-            <div class="trends">
-                <h3>Trends for you</h3>
-                <div class="trends-hover">
-                    <span>
-                    <p>Trending in South Africa</p>
-                    <i class="material-icons" id="mat-icon-trends">more_horiz</i>
-                     </span>
-                    <h4>#Dogecoin</h4>  
-                    <p>2,290 posts</p>
-                </div>
-                <br>
-                <div class="trends-hover">
-                   <span>
-                    <p>Entertainment • Trending</p> 
-                    <i class="material-icons" id="mat-icon-trends">more_horiz</i>
-                   </span> 
-                    <h4>#Amapiano</h4>
-                </div>
-                <br>
-                <div class="trends-hover">
-                    <span>
-                        <p>Trending in South Africa</p>
-                        <i class="material-icons" id="mat-icon-trends">more_horiz</i>
-                    </span>
-                    <h4>#TripToCapeTown</h4>
-                </div>
-                <br>
-                <div class="trends-hover">
-                    <span>
-                        <p>Entertainment • Trending</p>
-                        <i class="material-icons" id="mat-icon-trends">more_horiz</i>
-                    </span>
-                    <h4>#GoBokke</h4>
-                </div>
-                <br>
-                <div class="trends-hover">
-                    <span>
-                        <p>Trending in South Africa</p>
-                        <i class="material-icons" id="mat-icon-trends">more_horiz</i>
-                    </span>
-                    <h4>#netflixcrash</h4>
-                    <p>780k posts</p>
-                </div>
-                <br>
-                <div class="trends-hover">
-                    <span>
-                        <p>Sports • Trending</p>
-                        <i class="material-icons" id="mat-icon-trends">more_horiz</i>
-                    </span>
-                    <h4>#ENGvRSA</h4>
-                </div>
-                <br>
-                <div class="trends-hover">
-                    <span>
-                    <p>Trending in South Africa</p>
-                    <i class="material-icons" id="mat-icon-trends">more_horiz</i>
-                    </span>
-                    <h4>#Vuvuzela</h4>
-                </div>
-                <br>
-                <div class="trends-hover">
-                    <span>
-                        <p>Trending in South Africa</p>
-                        <i class="material-icons" id="mat-icon-trends">more_horiz</i>
-                    </span>
-                    <h4>#2010SoccerWorldCup</h4>
-                </div>
-                <p6 class="show-more">show more</p6>
-            </div>
-            <div class="who-to-follow">
-                <h3>Who to follow</h3>
-                <div class="follow-suggestions">
-                    <div class="follow-item">
-                        <img src="./assets/zaiotech.jpg" alt="User">
-                        <div>
-                            <h4>Zaio Institute of Technology</h4>
-                            <p>@zaiotech</p>
-                        </div>
-                        <button>Follow</button>
-                    </div>
-                    <div class="follow-item">
-                        <img src="./assets/elonmusk.jpg" alt="User">
-                        <div>
-                            <h4>Elon Musk</h4>
-                            <p>@elonmusk</p>
-                        </div>
-                        <button>Follow</button>
-                    </div>
-                    <div class="follow-item">
-                        <img src="./assets/koshiek.jpg" alt="User">
-                        <div>
-                            <h4>Koshiek Karan</h4>
-                            <p>@iamkoshiek</p>
-                        </div>
-                        <button>Follow</button>
-                    </div>
-                    <p6 class="show-more">show more</p6>
-                </div>
-            </div>
-
-
-            <div class="last-text">
-                <p id="terms">
-                    <a href="https://x.com/en/tos" target="_blank">Terms of Service</a>
-                    <a href="https://x.com/en/privacy" target="_blank">Privacy Policy</a> 
-                    <a href="https://help.x.com/en/rules-and-policies/x-cookies" target="_blank">Cookie Policy</a>
-                </p>                 
-                <p id="accessibility-info">
-                    <a href="https://help.x.com/en/resources/accessibility" target="_blank">Accessibility</a>
-                    <a href="https://business.x.com/en/help/troubleshooting/how-x-ads-work" target="_blank">Ads info</a>
-                    <a href="#">More</a>...
-                    <span>© 2024 Nkosiyethu</span>
-                </p>
-            </div>
+          </div>
         </div>
+        <div class="individual-tweets">
+            <div class="user-profile">
+              <img
+                src="./assets/elonmusk.jpg"
+                alt="user profile pic"
+              />
+            </div>
+            <div class="tweet-content">
+              <div class="username">
+                <p class="display-name">Elon Musk</p>
+                <p class="at-username">@elonmusk</p>
+                <p class="time-posted">· 1h</p>
+              </div>
+  
+              <div class="user-tweet-text">
+                <p>Just a reminder: Twitter is now called X. No, not the ex that still texts you <span class="hashtag"> #NameChangeConfusion</span></p>
+              </div>
+              <div class="user-tweet-icons">
+                <i class="bi bi-chat" data-text="2k"></i>
+                <i class="bi bi-repeat" data-text="88k"></i>
+                <i class="bi bi-heart" data-text="511K"></i>
+                <i class="bi bi-bar-chart" data-text="12M"></i>
+                 <div class="last-last">
+                 <span> <i class="bi bi-bookmark"></i></span>
+                 <span> <i class="bi bi-upload"></i></span>
+                </div>
+                    
+              </div>
+            </div>
+          </div>
+          <div class="individual-tweets">
+            <div class="user-profile">
+              <img
+                src="./assets/springboks.jpg"
+                alt="user profile pic"
+              />
+            </div>
+            <div class="tweet-content">
+              <div class="username">
+                <p class="display-name">Springboks</p>
+                <p class="at-username">@Springboks</p>
+                <p class="time-posted">· 2m</p>
+              </div>
+  
+              <div class="user-tweet-text">
+                <p>15 men. One mission. Total domination. 🏆💪 Here’s the lineup ready to make history!<span class="hashtag">#GoBokke #Springboks</span> </p>
+              </div>
+  
+              <div class="user-tweet-media">
+                <img
+                  src="./assets/boks.jpg"
+                  alt="tweet media"
+                />
+              </div>
+          
+              <div class="user-tweet-icons">
+                <i class="bi bi-chat" data-text="31"></i>
+                <i class="bi bi-repeat" data-text="53"></i>
+                <i class="bi bi-heart" data-text="684"></i>
+                <i class="bi bi-bar-chart" data-text="2K"></i>
+                 <div class="last-last">
+                 <span> <i class="bi bi-bookmark"></i></span>
+                 <span> <i class="bi bi-upload"></i></span>
+                </div>
+                    
+              </div>
+            </div>
+          </div>
+        
+
+      </div>
+
+      <div class="right-sidebar">
+        <div class="content">
+          <div class="search-bar">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="trends">
+            <p>Trends for you</p>
+            <div class="individual-trends">
+              <div class="trend-info">
+                <div class="trend-heading">Trending in South Africa</div>
+                <div class="trend-topic">#GoBokke</div>
+                <div class="trend-posts">117K posts</div>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+
+            <div class="individual-trends">
+              <div class="trend-info">
+                <div class="trend-heading">Trending in South Africa</div>
+                <div class="trend-topic">#TripToCapeTown</div>
+                <div class="trend-posts">10k posts</div>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+
+            <div class="individual-trends">
+              <div class="trend-info">
+                <div class="trend-heading">Business & finance</div>
+                <div class="trend-topic">#Bitcoin</div>
+                <div class="trend-posts">23,4K posts</div>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="individual-trends">
+              <div class="trend-info">
+                <div class="trend-heading">Entertainment • Trending</div>
+                <div class="trend-topic">#GNX</div>
+                <div class="trend-posts">23.5K posts</div>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+
+            <div class="individual-trends">
+              <div class="trend-info">
+                <div class="trend-heading">Trending in South Africa</div>
+                <div class="trend-topic">#2010SoccerWorldCup</div>
+                <div class="trend-posts">99,2K posts</div>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+
+            <div class="individual-trends">
+              <div class="trend-info">
+                <div class="trend-heading">Sports • Trending</div>
+                <div class="trend-topic">#ENGvRSA</div>
+                <div class="trend-posts">3,664 posts</div>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+
+            <div class="individual-trends">
+              <div class="trend-info">
+                <div class="trend-heading">Trending in South Africa</div>
+                <div class="trend-topic">#Vuvuzela</div>
+                <div class="trend-posts">4,083 posts</div>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+
+            <div class="individual-trends">
+              <div class="trend-info">
+                <div class="trend-heading">Trending in South Africa</div>
+                <div class="trend-topic">#netflixcrash</div>
+                <div class="trend-posts">3,457K posts</div>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+
+            <div class="individual-trends">
+              <div class="trend-info">
+                <div class="trend-heading">Business & finance</div>
+                <div class="trend-topic">#Dogecoin</div>
+                <div class="trend-posts">2,290 posts</div>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+
+            <div class="individual-trends">
+              <div class="trend-info">
+                <div class="trend-heading">Entertainment • Trending</div>
+                <div class="trend-topic">#Amapiano</div>
+                <div class="trend-posts">77.1K posts</div>
+              </div>
+              <i class="bi bi-three-dots"></i>
+            </div>
+          </div>
+          <footer>
+            <ul>
+              <li><a href="https://x.com/en/tos" target="_blank">Terms of Service</a></li>
+              <li><a href="https://x.com/en/privacy" target="_blank">Privacy Policy</a></li>
+              <li><a href="https://help.x.com/en/rules-and-policies/x-cookies" target="_blank">Cookie Policy</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="https://help.x.com/en/resources/accessibility" target="_blank">Accessibility</a></li>
+              <li><a href="https://business.x.com/en/help/troubleshooting/how-x-ads-work" target="_blank">Ads info</a></li>
+              <li><a href="#more">More</a>...</li>
+              <li>© 2024 Nkosiyethu</li>
+            </ul>
+          </footer>
+        </div>
+      </div>
     </div>
-</body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-
-
-
-
-
-
-
-

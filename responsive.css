@@ -1,54 +1,93 @@
-/* mobile.css */
-
+/* For screens smaller than 768px (typical mobile devices) */
 @media (max-width: 768px) {
-    /* Mobile Optimizations */
+    /* Adjusts body margin for smaller screens */
+    body {
+        margin: 0;
+    }
 
-    .left-sidebar, .right-sidebar {
+    /* Stack items vertically and center them */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Hide left sidebar (Navigation) on smaller screens */
+    .left-sidebar {
         display: none;
     }
 
-    .middle {
+    /* Adjust center content width */
+    .center-content {
+        flex: 1;
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    /* Make tweets full-width */
+    .individual-tweets {
         padding: 10px;
     }
 
-  
-    .bottom-bar {
-        position: fixed;
-        bottom: 0;
+    /* Make images in tweets responsive */
+    .individual-tweets .user-tweet-media img {
         width: 100%;
-        background-color: #1DA1F2;
-        display: flex;
-        justify-content: space-evenly;
-        padding: 10px 0;
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        height: auto;
     }
 
-    .menu-item {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        border-radius: 50%;
-        transition: background-color 0.3s, transform 0.3s;
+    /* Adjust search bar and trends section */
+    .right-sidebar {
+        display: none; /* Hide trends/search bar on mobile */
     }
 
-    .menu-item:hover {
-        background-color: #333;
-        transform: scale(1.1);
+    /* Adjust tweet box for better fit */
+    .tweet-box {
+        flex-direction: column;
+        padding: 10px;
     }
 
-    .menu-item.active {
-        background-color: #096ba8;
-        transform: scale(1.2);
+    .message-box input {
+        padding-bottom: 30px;
     }
 
-    .menu-item .material-icons {
-        color: white;
-        font-size: 24px;
+    /* Make tweet buttons fit */
+    .message-options {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
+    .post-button-top {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Adjust tweet action buttons (like, retweet, reply) */
+    .user-tweet-icons {
+        justify-content: space-between;
+    }
+}
+
+/* For ultra-small screens (less than 480px) */
+@media (max-width: 480px) {
+    .tweet-box {
+        padding: 5px;
+    }
+
+    .individual-tweets {
+        padding: 5px;
+    }
+
+    .user-profile img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .user-tweet-icons i {
+        font-size: 14px;
+    }
+
+    .post-button-top {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
